@@ -11,7 +11,8 @@ throughout the remaining exercises to demonstrate the various features of Cilium
 
 The `kubectl` Kubernetes client will be used throughout the exercises to
 interact with the Kubernetes API. If you already have the latest version
-installed, you can skip this section.
+installed, you can skip this section. If none of the provided installation
+methods apply for your environment, visit the [Official Installation Guide](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
 
 To check your current version run:
 
@@ -653,10 +654,6 @@ from an initializing endpoint `reserved:init`, or from a remote node
 You can also see the identities created by Cilium for each set of pod labels.
 Tenants A, B, and C each have exactly two identities created - one for the
 frontend-service and another for the backend-service.
-
-### Pod-to-Pod Connectivity
-
-
 
 ### Service Load-Balancing
 
